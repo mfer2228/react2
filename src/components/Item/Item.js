@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
 
-const Item = ({id, nombre, precio, categoría, img, stock, descripcion}) => {
+const Item = ({id, nombre, precio, img, stock }) => {
     return (
 
     <Card border="info" >
@@ -14,9 +14,12 @@ const Item = ({id, nombre, precio, categoría, img, stock, descripcion}) => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <Button variant="primary">Ver detalle</Button>
+        <Button variant="primary">
+          <link to={`/item/${id}`} className='Option'>Ver detalle</link>
         </Card.Footer>
       </Card>
 
     )
 }
+
+export default Item
