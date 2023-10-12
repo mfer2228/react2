@@ -1,7 +1,7 @@
 import ItemCount from '../ItemCount/ItemCount'
 import Card from 'react-bootstrap/Card'
 
-const ItemDetail = ({id, nombre, precio, categoria, img, stock, descripcion}) => {
+const ItemDetail = ({ nombre, precio, categoria, img, stock, descripcion}) => {
     return (
         <Card border="info" >
         <Card.Header> {nombre} </Card.Header>
@@ -26,4 +26,4 @@ const ItemDetail = ({id, nombre, precio, categoria, img, stock, descripcion}) =>
     )
 }
 
-export default ItemDetail
+export default ItemDetail;
